@@ -1,4 +1,7 @@
 # Open project -> Image Denoising 
+
+( psnr 28.12 )
+
 Paper Implemented -> Zero-Reference Deep Curve Estimation for Low-Light Image Enhancement
 The DCE network is built with multiple convolutional layers followed by concatenation layers to combine features from different stages capturing both fine-grained and high-level features, The use of 'relu' activations in the intermediate layers helps in learning complex patterns.
 it learns to map the input low-light image to its best-fit curve parameters maps. The network consist of 7 convolution layers with symmetrical skip concatenation. First 6 convolution layers consist of 32 filters each with kernel size of 3x3 with stride of 1 followed by RelU activation. The last convolution layer has iteration x 3 number of filters (if we set iteration to 8 it will produce 24 curve parameters maps for 8 iteration, where each iteration generates three curve parameter maps for the three RGB channels.
